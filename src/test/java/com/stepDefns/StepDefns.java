@@ -16,6 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 public class StepDefns {
 
+    WebDriver driver;
     @Given("Navigate to the C44PM URL")
     public void navigate_to_the_C44PM_URL() {
         BaseActions.OB();
@@ -24,6 +25,7 @@ public class StepDefns {
 
     @And("Enter Username , Password and Click on Login")
     public void enter_Username_Password_and_Click_on_Login()  {
+
         BaseActions.Login();
     }
 
@@ -43,7 +45,6 @@ public class StepDefns {
     public void enter_all_required_fields_and_click_on_Save_Changes() {
 
         BaseActions.Create_New_Division();
-
 
     }
 }

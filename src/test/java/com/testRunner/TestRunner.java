@@ -12,7 +12,11 @@ import org.junit.runner.RunWith;
         monochrome = true,
         dryRun = true,
         tags = "",
-        plugin = {"pretty","html:target-Reports"}
+
+        plugin = {"pretty","html:target/cucumber-html-reports",
+                  "json:target/cucumber-json-reports",
+                  "junit:target/cucumber.xml"
+        }
 )
 
 
